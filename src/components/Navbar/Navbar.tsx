@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import { useState } from 'react';
+import { CiMenuBurger } from 'react-icons/ci';
+import { IoMdClose } from "react-icons/io";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,25 +27,24 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.navbar}>
       <Link to="/" className={styles.navLogo}>
         EugeneZan
       </Link>
-      <div className={styles.burger} onClick={handleToggleMenu}>
-        <div className={styles.burgerLine}></div>
-        <div className={styles.burgerLine}></div>
-        <div className={styles.burgerLine}></div>
+      <div className={styles.nav}>
+        {isMenuOpen ? (
+          <IoMdClose className={styles.navButton} size={36} onClick={handleToggleMenu}/>
+        ) : (
+          <CiMenuBurger className={styles.navButton} size={36} onClick={handleToggleMenu}/>
+        )}
+        <ul className={`${styles.navList} ${isMenuOpen && styles.navListOpen}`} onClick={handleToggleMenu}>
+          {links.map(link => (
+            <li className={styles.navItem} key={link.name}>
+              <Link className={styles.navLink} to={link.path}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul className={styles.navList}>
-        {links.map(link => (
-          <li className={styles.navItem} key={link.name}>
-            <Link className={styles.navLink} to={link.path}>{link.name}</Link>
-          </li>
-        ))}
-      </ul>
-      {/* {isMenuOpen && (
-        <Sidebar onClose={handleToggleMenu} />
-      )} */}
     </nav>
   );
 };
