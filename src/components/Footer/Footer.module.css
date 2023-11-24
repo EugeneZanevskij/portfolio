@@ -1,0 +1,22 @@
+@import '../../vars.css';
+
+.footer {
+  background-color: var(--color-dark);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.socialLinks {
+  margin-bottom: 0.75rem;
+}
+
+.socialLinks a {
+  color: #fff;
+  margin: 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.yearLine {
+  font-size: 14px;
+}
