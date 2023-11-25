@@ -1,0 +1,89 @@
+/* Home.module.css */
+@import '../../vars.css';
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 10%;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+}
+
+.homeTitle {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.homeInfo {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.homeCvBtn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-secondary);
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.homeCvBtn:hover {
+  background-color: var(--color-primary);
+}
+
+.homeImage {
+  width: 50%;
+  border-radius: 50%;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.topBlur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10rem;
+  background-color: rgba(255, 0, 0, 0.5);
+  filter: blur(5rem);
+  z-index: -1;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .homeContent {
+    align-items: center;
+  }
+
+
+}

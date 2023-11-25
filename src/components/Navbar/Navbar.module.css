@@ -2,7 +2,7 @@
 
 .navbar {
   position: relative;
-  padding: 1.5rem;
+  padding: 1.5rem 10%;
   border-bottom: 1px solid #fff;
   display: flex;
   justify-content: space-between;
