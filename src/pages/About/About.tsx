@@ -2,6 +2,7 @@ import styles from './About.module.css';
 import homeImage from '../../assets/homeImage.jpg';
 import cursorIcon from '../../assets/cursorIcon.png';
 import serverIcon from '../../assets/serverIcon.png';
+import { Experience } from '../../components/Experience/Experience';
 
 const About = () => {
   return (
@@ -34,6 +35,7 @@ const About = () => {
           </li>
         </ul>
       </div>
+      <Experience />
     </section>
   );
 };
