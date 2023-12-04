@@ -1,12 +1,13 @@
 import { Project } from "../types";
+import GoogleCalendar from "../assets/google-calendar-clone.jpg";
 
 export const projects : Array<Project> = [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Google Calendar Clone",
+    "imageSrc": GoogleCalendar,
+    "description": "This project made using React as framework and Feature-Sliced Design (FSD) methodology (have identical appearance and retain all functionality)",
+    "skills": ["React", "Context", "Feature-Sliced Design", ],
+    "demo": "https://google-calendar-eugenezanevskijs-projects.vercel.app/",
+    "source": "https://github.com/EugeneZanevskij/google-calendar"
   }
 ]
