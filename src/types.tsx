@@ -11,3 +11,12 @@ export interface HistoryItem {
   description: string;
   image: string;
 }
+
+export interface Project {
+  title: string;
+  imageSrc: string;
+  description: string;
+  skills: Array<string>;
+  demo: string;
+  source: string;
+}
