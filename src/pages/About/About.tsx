@@ -1,5 +1,5 @@
 import styles from './About.module.css';
-import homeImage from '../../assets/homeImage.jpg';
+import aboutImage from '../../assets/aboutImage.jpg';
 import cursorIcon from '../../assets/cursorIcon.png';
 import serverIcon from '../../assets/serverIcon.png';
 import { Experience } from '../../components/Experience/Experience';
@@ -10,7 +10,7 @@ const About = () => {
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
         <img
-          src={homeImage}
+          src={aboutImage}
           alt="Me"
           className={styles.aboutImage}
         />
