@@ -2,8 +2,7 @@ import React from "react";
 
 import styles from "./Experience.module.css";
 import {skills} from "../../data/skills.js";
-import history from "../../data/history.json";
-import { getImageUrl } from "../../utils";
+// import history from "../../data/history.json";
 
 export const Experience = () => {
   return (
