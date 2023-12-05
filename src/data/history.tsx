@@ -1,5 +1,5 @@
 import { HistoryItem } from "../types";
-import IntexSoft from "../assets/IntexSoft.png"
+import IntexSoft from "../assets/intexsoft.png";
 
 export const history : Array<HistoryItem> = [
   {
