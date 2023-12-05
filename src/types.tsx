@@ -17,6 +17,6 @@ export interface Project {
   imageSrc: string;
   description: string;
   skills: Array<string>;
-  demo: string;
+  demo?: string;
   source: string;
 }
