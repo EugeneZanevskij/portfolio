@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       <div className={styles.homeContent}>
         <h1 className={styles.homeTitle}>Hi, I'm Eugene</h1>
         <p className={styles.homeInfo}>I'm a Front End developer with a passion for creating websites. Looking for work opportunities</p>
-        <a href="/" target="_blank" className={styles.homeCvBtn}>View CV</a>
+        <a href="https://drive.google.com/file/d/1u3RzcJYbDZU_gX2maWOLZ4beYBybiNnW/view?usp=sharing" target="_blank" className={styles.homeCvBtn}>View CV</a>
       </div>
       <img src={homeImage} alt="Home" className={styles.homeImage} />
       <div className={styles.topBlur} />
